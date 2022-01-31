@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cmpt 276 Assignment 1</title>
+    <link rel="stylesheet" href="stylesheets/calculator.css">
+</head>
+
+<body>
+    <div class="content-container">
+
+
+        <div class="top-grey">
+
+        </div>
+
+        <div class="title-screen">
+            <h1>Grade Calculator</h1>
+            <div class="inner">
+                <div class="inside-background">
+
+
+                    <br>
+                    <h3 class="align space">Activities</h3>
+                    <p class="align">Give grades to the numeric activities:</p>
+                    <table border="1" cellpadding="5">
+                        <thead>
+                            <tr>
+                                <th><b>Name</b></th>
+                                <th><b>Short Name</b></th>
+                                <th><b>Weight</b></th>
+                                <th><b>Grade</b></th>
+                                <th><b>Percent</b></th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>Activity 1</td>
+                            <td>A1</td>
+                            <td>
+                                <form>
+                                    <input type="number" id="a1-weight">
+                                </form>
+                            </td>
+                            <td>
+                                <form>
+                                    <input type="number" id="a1-num" onkeyup="percentCalc()">
+                                </form>
+                                /
+                                <form>
+                                    <input type="number" id="a1-div" onkeyup="percentCalc()">
+                                </form>
+                            </td>
+                            <td><h4 id="a1-p"></h4></td>
+                        </tr>
+                        <tr>
+                            <td>Activity 2</td>
+                            <td>A2</td>
+                            <td>
+                                <form>
+                                    <input type="number" id="a2-weight">
+                                </form>
+                            </td>
+                            <td>
+                                <form>
+                                    <input type="number" id="a2-num" onkeyup="percentCalc()">
+                                </form>
+                                /
+                                <form>
+                                    <input type="number" id="a2-div" onkeyup="percentCalc()">
+                                </form>
+                            </td>
+                            <td><h4 id="a2-p"></h4></td>
+                        </tr>
+                        <tr>
+                            <td>Activity 3</td>
+                            <td>A3</td>
+                            <td>
+                                <form>
+                                    <input type="number" id="a3-weight">
+                                </form>
+                            </td>
+                            <td>
+                                <form>
+                                    <input type="number" id="a3-num" onkeyup="percentCalc()">
+                                </form>
+                                /
+                                <form>
+                                    <input type="number" id="a3-div" onkeyup="percentCalc()">
+                                </form>
+                            </td>
+                            <td><h4 id="a3-p"></h4></td>
+                        </tr>
+                        <tr>
+                            <td>Activity 4</td>
+                            <td>A4</td>
+                            <td>
+                                <form>
+                                    <input type="number" id="a4-weight">
+                                </form>
+                            </td>
+                            <td>
+                                <form>
+                                    <input type="number" id="a4-num" onkeyup="percentCalc()">
+                                </form>
+                                /
+                                <form>
+                                    <input type="number" id="a4-div" onkeyup="percentCalc()">
+                                </form>
+                            </td>
+                            <td><h4 id="a4-p"></h4></td>
+                        </tr>
+
+                    </table>
+                    <br>
+                    <button type="button" class="align add">ADD ACTIVITY</button>
+                    <h3 class="align">Result</h3>
+                    <h4 class="align" id="result"></h4>
+                    <ul class="buttons">
+                        <button type="button" class="weight">WEIGHTED</button>
+                        <button type="button" class="mean">MEAN</button>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="bot-grey">
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="calculator.js" async defer></script>
+</body>
+
+</html>
